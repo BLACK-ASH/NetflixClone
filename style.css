@@ -1,37 +1,202 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     font-weight: 700;
-   
-}
-body{
-    background-color:rgb(35 35 35);
-}
-.main{
-    height: 80vh;
-    background-image: url(assests/img/image0.jpg);
-   position: relative;
-    
+
 }
 
-.dark{
+.main {
+    height: 75vh;
+    background-image: url(assests/img/image0.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    object-position: center center;
+}
+.logo{
+    height: 40px;
+}
+.dark {
     height: 80vh;
-    background-color:black;
-    opacity: 0.4;
+    background-color: black;
     position: absolute;
     top: 0;
+
+}
+
+nav {
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    margin: auto;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    padding: .4rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: max-content;
+}
+
+.bgred {
+    background-color: red;
+}
+
+.content {
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+    margin: 1rem;
+    color: white;
+    text-align: center;
+    text-overflow: none;
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin: 1rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+input {
+    padding: .6rem;
+    width: 15rem;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+main {
+
+    background-color: black;
+}
+
+.blanck {
+    height: 7px;
+    background-color: rgb(35 35 35);
+}
+
+.box {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+}
+.box img{
+    height: 25rem;
+}
+video{
+    position: absolute;
+    top: inherit;
     
 }
-nav{
+.extra {
+    max-width: 80vw;
+    margin: auto;
+
+}
+
+.extra h4 {
+    text-align: left;
+    background-color: rgb(35 35 35);
+    padding: 1.5rem;
+}
+
+.register {
     display: flex;
-    max-width: 50vw;
-    justify-content:flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
-    column-gap: 30vw;
+    padding: 3rem 0;
+}
+
+
+.register span {
+    max-width: 80vw;
     margin: auto;
 }
-.btn{
-   
+
+  
+
+footer {
+    background-color: black;
+    color: white;
+padding: 1rem;
+}
+
+.info1 {
+    max-width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.info2 {
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    padding: 1.5rem;
+}
+.info2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    text-decoration: underline;
+}
+.info1 button {
+background-color: rgba(111, 109, 109, 0.362);
+margin: 1rem 0;
+}
+@media screen and (max-width:960px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        margin: auto;
+    }
+    .info2 {
+        max-width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1rem;
+        padding: 1.5rem;
+    }
+    nav{
+        column-gap: 20vw;
+    }
+    h2{
+       font-size:  2rem;
+    }
+    button{
+        font-size: .7rem;
+    }
 }
