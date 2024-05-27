@@ -7,22 +7,24 @@
 }
 
 .main {
-    height: 75vh;
+    height: 70vh;
     background-image: url(assests/img/image0.jpg);
     position: relative;
     background-repeat: no-repeat;
     object-fit: contain;
     object-position: center center;
+    top: 0;
+    width: 100%;
 }
 .logo{
     height: 40px;
 }
 .dark {
-    height: 80vh;
-    background-color: black;
-    position: absolute;
-    top: 0;
-
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.648);
+   width: 100%;
+   position: absolute;
+   top: 0;
 }
 
 nav {
@@ -30,7 +32,7 @@ nav {
     max-width: 80vw;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin: auto;
 
 }
@@ -59,8 +61,8 @@ button {
     margin: auto;
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: 6rem;
+    padding: 1rem;
+  
 }
 
 h2 {
@@ -139,6 +141,10 @@ video{
 
 
 .register span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 80vw;
     margin: auto;
 }
@@ -191,12 +197,15 @@ margin: 1rem 0;
         padding: 1.5rem;
     }
     nav{
-        column-gap: 20vw;
+        column-gap: 15vw;
     }
     h2{
        font-size:  2rem;
     }
     button{
         font-size: .7rem;
+    }
+    .box img{
+        height: 15rem;
     }
 }
